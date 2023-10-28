@@ -54,6 +54,8 @@ Para asegurar la conveniencia del usuario y éxito de tu proyecto, has creado un
 
 ### 1 - `BBites Token - BBTKN`
 
+// Este contrato está listo por ahora
+
 * Este contrato es un ERC20 que debe ser convertido a actualizable. Posee 18 decimales. Es publicado en Ethereum (`Goerli`)
 
 * En el método `initialize()`, usando `_mint()` se acuña 1 millón de tokens al que publica el contrato. Ese millón será utilizado para crear el pool de liquidez junto al USDC. 
@@ -143,7 +145,7 @@ Para asegurar la conveniencia del usuario y éxito de tu proyecto, has creado un
 1. Dentro de la carpeta `ipfs` tenemos dos carpetas: `images` y `metadata`. Estas dos carpetas representan a los activos digitales y la metadata, respectivamente.
 2. Guardar la carpeta de `images` de activos digitales en la aplicación de escritorio `IPFS`. Obtener el `CID` luego de guardar la carpeta `images`.
 3. Dentro de la carpeta de `metadata`, se encontrarán los archivos `json` enumerados de manera secuencial. Cada archivo `json`, representa la metada de un activo digital en particular. Por ejemplo, el archivo `0`, representa la metadata del activo digital `0.png`, guardada en la otra carpeta `images`.
-4. Vamos a modificar los archivos de `metadata`. Por ejemplo, empecemos con `./metadata/0`. Buscar la propiedad `"image": "ipfs://[enter the CID here]/0.png"`. Reemplazar por el valor del `CID` obtenido en el punto 2 para todos los archivos. Usa `ctrl + shift + h`.
+4. Vamos a modificar los archivos de `metadata`. Por ejemplo, empecemos con `./metadata/0`. Buscar la propiedad `"image": "ipfs://QmWJ3udcvB2XjvgWjcn8YrC7w8VEL2VWaUMq1x6Ns4t29k/0.png"`. Reemplazar por el valor del `CID` obtenido en el punto 2 para todos los archivos. Usa `ctrl + shift + h`.
 5. Así también cambia la propiedad `description` y escoge un nombre apropiado para tu colección. Usa `ctrl + shift + h`.
 6. (Opcional) Dado que hay cinco grupos diferentes de NFTs, modificar el atributo `name` de cada archivo `json` para que represente más apropiadamente al grupo de NFT al que pertenece.
 7. (Opcional) Agregar más atributos en la propiedad `attributes`. Seguir la guía/estándar definido en la página de Open Sea que lo puedes encontrar [aquí](https://docs.opensea.io/docs/metadata-standards). Estos atributos serán vistos en la galería de Opean Sea.
@@ -216,10 +218,15 @@ Crear un front-end minimalista para poder interactuar con el contrato de `Public
 
 # Completar
 
-1. Pega aquí la tx de una compra de un NFT `común` en `Public Sale` usando `UDSC`:
-2. Pega aquí la tx de una compra de un NFT `raro` en `Public Sale` usando `BBTKN`:
-3. Pega aquí la tx de una compra de un NFT `legendario` en `Public Sale` usando `UDSC`:
+1. Pega aquí la tx de una compra de un NFT `común` en `Public Sale` usando `UDSC`: 0x08670cfeab9fef6417cb8da142b54fd4cfcc147d6e8d1e5815e15fbf66e503b8
+2. Pega aquí la tx de una compra de un NFT `raro` en `Public Sale` usando `BBTKN`: 0x7acbded2bce324180ba147536c1478f7700f4912a3805cbe6bcf38433382ba02
+3. Pega aquí la tx de una compra de un NFT `legendario` en `Public Sale` usando `UDSC`: 0x30ebbea56d5abe57035141b16d8b2266b7436c55965b1487f7dd625014c957b9
 4. Pega aquí la tx de una compra de un NFT `mistico` en `Public Sale` usando `ether` y un `id` en específico:
-5. Pega aquí la tx de una compra de un NFT `mistico` en `Public Sale` usando `ether` (random id):
+0xba3b162c353f40005f2c62fa5b76bf8f73c25bff73f2c1b65530cdfa0615eef2 
+5. Pega aquí la tx de una compra de un NFT `mistico` en `Public Sale` usando `ether` (random id): 
+0x36e76ebd57a5e9424eafad856763b25e709b57d2c4b1b9f90f22d8482c7157a2
 6. Pega aquí la tx de una acuñación whitelist de un NFT en el contrato `NFT`:
-7. Pega aquí la tx de un buy back de NFT en el contrato `NFT`:
+0x5cfcc7347e3fbfc119fde6e8ba760f013707c58d638f1b14f3b99099d50b22a7
+7. Pega aquí la tx de un buy back de NFT en el contrato `NFT`: 
+0xfc6c0ce881ccdeef648db44b6b55aea7d8b9e562f65e3110f90a4c24397491ba
+
